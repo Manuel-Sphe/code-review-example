@@ -1,10 +1,10 @@
 # Correctness:
-- There is an error in line-20 the `reverse_string` function where the function reverseString is called instead of reverse_string. This will cause the code to not work as expected and throw a `compile-time error`.
-- The fibonacci series is implemented correctly, but the use of the generic type T is not necessary in this case as int is sufficient.
+- There is an error in line-20 the `reverse_string` function where the function `reverseString` is called instead of `reverse_string`. This will cause the code to not work as expected and throw a `compile-time error`.
+- The fibonacci series is implemented correctly, but the use of the generic type `T` is not necessary in this case as int is sufficient.
 
 # Efficiency:
-- The reverse string function has O(n) time complexity where n is the length of the string
-- The fibonacci series function has O(n) time complexity where n is the number of elements in the series
+- The reverse string function has `O(n)` time complexity where n is the length of the string
+- The fibonacci series function has `O(n)` time complexity where n is the number of elements in the series
 
 # Style:
 The code follows some basic coding conventions such as proper indentation and use of meaningful variable names. However, there are some improvements that can be made:
@@ -15,5 +15,5 @@ The code follows some basic coding conventions such as proper indentation and us
 - Raname `function` to `printFibonacciSeries` for readability
 
 # Documentation:
-- There is no documentation in the code explaining what the code does and how it works. This makes it difficult for someone unfamiliar with the code to understand what is happening.
-
+- The comments in the code explain the purpose of each function and what is happening inside it
+- The code is easy to understand without the comments as well, but the comments help to clarify the implementation details
