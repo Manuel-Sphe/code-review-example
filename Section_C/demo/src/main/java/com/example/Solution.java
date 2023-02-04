@@ -17,13 +17,25 @@ public class Solution {
         while (number > 0) {
             int groupNum = (int) (number % 1000);
             if (groupNum != 0) {
-                String groupString = threeDigitToWords(groupNum) + " " + GROUP_NAMES[group];
+                String groupString = threeDigitToWords(groupNum);
+                if (group > 0) {
+                    groupString = groupString + " " + GROUP_NAMES[group];
+                }
                 parts.add(0, groupString);
             }
             number /= 1000;
             group++;
         }
-        String result = String.join(" and ", parts).trim() + ".";
+        String result = "";
+        for (int i = 0; i < parts.size(); i++) {
+            result += parts.get(i);
+            if (i < parts.size() - 2) {
+                result += ", ";
+            } else if (i == parts.size() - 2) {
+                result += " and ";
+            }
+        }
+        result = result.trim() + ".";
         return result.substring(0, 1).toUpperCase() + result.substring(1).toLowerCase();
     }
 
