@@ -28,12 +28,20 @@
   ```
 2. Verify the installation by running the following command in the terminal:
   ```bash
-  mvn -v`
+  mvn -v
+  ```
 
 ## Running and Automating Tests
 - Navigaate to this directory 
-- Run `mvn install` to install dependecies.
-- Run `mvn test` This command will execute all the tests in the project that are defined in the `src/test/java` directory.
+- Run to install dependecies.
+```bash
+mvn install
+``` 
+
+- Run 
+```bash mvn test
+``` 
+The above command will execute all the tests in the project that are defined in the `src/test/java` directory.
 - The results of the tests will be displayed in the terminal/command prompt and also recorded in the `target/surefire-reports` directory.
 
 ## Automating Tests
