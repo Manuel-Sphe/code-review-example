@@ -8,18 +8,27 @@
 
 ## Linux
 1. Update the package index:
-  - `sudo apt update`
+  ```bash 
+  sudo apt update
+  ```
 2. Install Maven using the following command:
-  - `sudo apt install maven`
+  ```bash
+  sudo apt install maven
+  ```
 3. Verify the installation by running the following command in the terminal:
-  - `mvn -version`
+   ```bash
+   mvn -version
+   ```
 
 
 ## MacOS
 1. Install Homebrew using the following command:
-  - `brew install maven`
+  ```bash
+  brew install maven
+  ```
 2. Verify the installation by running the following command in the terminal:
-  - `mvn -v`
+  ```bash
+  mvn -v`
 
 ## Running and Automating Tests
 - Navigaate to this directory 
@@ -31,8 +40,10 @@
 - You can automate the tests by adding the mvn test command to your Continuous Integration (CI) pipeline, which will run the tests every time you push changes to your code repository. 
 - For example, you can use popular CI/CD tools such as Jenkins, Travis CI, CircleCI, etc.
 
-`$mvn test` output
-```
+```bash
+mvn test
+``` 
+```bash
   [INFO] Scanning for projects...
 [INFO]
 [INFO] --------------------------< com.example:demo >--------------------------
