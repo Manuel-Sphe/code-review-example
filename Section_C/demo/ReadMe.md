@@ -39,7 +39,8 @@ mvn install
 ``` 
 
 - Run 
-```bash mvn test
+```bash 
+mvn test
 ``` 
 The above command will execute all the tests in the project that are defined in the `src/test/java` directory.
 - The results of the tests will be displayed in the terminal/command prompt and also recorded in the `target/surefire-reports` directory.
@@ -49,9 +50,9 @@ The above command will execute all the tests in the project that are defined in 
 - For example, you can use popular CI/CD tools such as Jenkins, Travis CI, CircleCI, etc.
 
 ```bash
+
 mvn test
-``` 
-```bash
+
   [INFO] Scanning for projects...
 [INFO]
 [INFO] --------------------------< com.example:demo >--------------------------
